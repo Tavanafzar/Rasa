@@ -2,7 +2,7 @@ from winotify import Notification
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-ICON_PATH = BASE_DIR / "assets" / "rasa.png"
+ICON_PATH = BASE_DIR / "assets" / "rasa.ico"
 
 
 class NotificationManager:

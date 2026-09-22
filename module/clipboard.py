@@ -7,7 +7,7 @@ from pynput.keyboard import Key, Controller
 # Delay (seconds) given to Windows to actually update the clipboard after a
 # simulated Ctrl+C / Ctrl+V. Without this, pyperclip.paste() often reads the
 # *previous* clipboard content because the copy hasn't landed yet.
-CLIPBOARD_SYNC_DELAY = 0.15
+CLIPBOARD_SYNC_DELAY = 0.1
 
 
 class RasaClipboard:
@@ -28,6 +28,7 @@ class RasaClipboard:
             content = pyperclip.paste()
         except pyperclip.PyperclipException as exc:
             print(f"Could not read clipboard: {exc}")
+
             return
 
         # Nothing was actually selected/copied (clipboard unchanged) -

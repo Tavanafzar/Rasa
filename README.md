@@ -332,3 +332,65 @@ Rasa is an evolving project. Potential future improvements include:
 * [ ] Automatic language detection
 * [ ] More complete Persian keyboard mapping
 * [ ] Improved text conversion
+* [ ] Custom keyboard layouts
+* [ ] Custom global shortcut
+* [ ] More Windows integration
+* [ ] Better clipboard handling
+* [ ] Additional language support
+* [ ] Customizable notifications
+* [ ] Improved system-tray controls
+* [ ] Startup with Windows
+* [ ] More advanced text correction
+
+The roadmap may change as Rasa develops.
+
+### 🐛 Bug Reports
+
+Found a problem? Please create a GitHub Issue and include:
+
+* Rasa version
+* Windows version
+* Steps to reproduce the problem
+* Expected behavior
+* Actual behavior
+* Relevant screenshots
+* Error messages or logs
+
+### 💡 Feature Requests
+
+Have an idea for Rasa? Open a Feature Request and describe:
+
+```text
+What should Rasa do?
+Why would this feature be useful?
+How should the feature work?
+```
+
+Screenshots, examples, and use cases are welcome.
+
+### 📜 License
+
+Rasa is distributed under the license specified in this repository.
+
+See:
+
+[Read the License](LICENSE)
+
+### 👨‍💻 Author
+
+**GitHub — [PARSA MIRI](https://github.com/PARSAMIRI)**
+
+Developer and creator of **Rasa**.
+
+> ⭐ **Star the repository if you like Rasa!**
+> If Rasa is useful to you, consider giving the repository a star on GitHub.
+
+---
+
+<div align="center">
+
+**Rasa — Type it wrong. Fix it fast.**
+
+Made with ❤️ by Parsa Miri
+
+</div>

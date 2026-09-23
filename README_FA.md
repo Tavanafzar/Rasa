@@ -9,7 +9,7 @@
 
 ![Version](https://img.shields.io/badge/Version-v1.0.0-1f6feb)
 ![Python](https://img.shields.io/badge/Python-3.14.7-d4a72c)
-![License](https://img.shields.io/badge/License-Rasa_License-238636)
+![License](https://img.shields.io/badge/License-MIT_license-238636)
 
 </div>
 

@@ -5,15 +5,17 @@ import json
 class LangSwitcher:
     def __init__(self) -> None:
         super().__init__()
-        self.langData = {
-
-        }
-        with open(Path("langpack") / "default.lg", "r", encoding="utf-8") as pack:
+        self.langData = {}
+        
+        BASE_DIR = Path(__file__).resolve().parent.parent
+        langPack = BASE_DIR /"langpack" / "default.lg"
+        
+        with open(langPack, "r", encoding="utf-8") as pack:
             self.langData = json.load(pack)
 
         self.ReversedData = {v: k for k,
                              v in self.langData.items() if v != k}
-        
+
     def detect_lang(self, text) -> dict | None:
         for ch in text:
             if ch in self.langData:

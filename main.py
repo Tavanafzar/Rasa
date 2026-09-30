@@ -1,5 +1,6 @@
 from module.hotkeyManager import HotkeyManager
 from module.notification import NotificationManager
+from module.singleInstanceManager import SingleInstanceGuard
 from theme.themeLoader import ThemeLoader
 
 from PySide6.QtWidgets import QApplication, QMenu, QSystemTrayIcon
@@ -13,6 +14,11 @@ def main():
     app = QApplication(sys.argv)
     app.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
 
+    instance_guard = SingleInstanceGuard()
+    
+    if instance_guard.try_acquire():
+        sys.exit(0)
+      
     notification = NotificationManager()
     notification.program_running()
 
@@ -40,6 +46,8 @@ def main():
     tray_menu.setStyleSheet(stylesheet)
 
     tray_icon.setContextMenu(tray_menu)
+    
+    instance_guard.show_requested.connect(NotificationManager.program_is_till_running)
     tray_icon.show()
 
     sys.exit(app.exec())

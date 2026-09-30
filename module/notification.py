@@ -14,8 +14,18 @@ class NotificationManager:
         toast = Notification(
 
             app_id="رسا",
-            title="رسا اجرا شد",
+            title="پیغام",
             msg="رسا آماده به کار است.",
+            icon=str(ICON_PATH)
+        )
+
+        toast.show()
+    def program_is_till_running(self):
+        toast = Notification(
+
+            app_id="رسا",
+            title="پیغام",
+            msg="برنامه در پس زمینه مشغول کار است .",
             icon=str(ICON_PATH)
         )
 
